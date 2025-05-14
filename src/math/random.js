@@ -84,8 +84,14 @@ p5.prototype.randomSeed = function(seed) {
 };
 
 /**
- * Returns a random number or a random element from an array.
- *
+* Returns a random number or a random element from an array.
+
+* If a single number is provided, returns a number from 0 (inclusive) up to that value (exclusive).
+* If two numbers are provided, returns a number between the first (inclusive) and second (exclusive).
+* If an array is provided, returns a random element from the array.
+* If the array has one element, that element is returned.
+
+ 
  * `random()` follows uniform distribution, which means that all outcomes are
  * equally likely. When `random()` is used to generate numbers, all
  * numbers in the output range are equally likely to be returned. When
